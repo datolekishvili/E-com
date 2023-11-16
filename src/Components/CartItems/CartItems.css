@@ -1,0 +1,68 @@
+.cartitems {
+  margin: 50px 10px; /* Adjusted margin for smaller screens */
+}
+
+.cartitems hr {
+  height: 2px; /* Adjusted height for a thinner line on smaller screens */
+  background: #e2e2e2;
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 15px; /* Adjusted margin for smaller screens */
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  align-items: center;
+  gap: 10px; /* Reduced gap for smaller screens */
+  padding: 15px 0;
+  color: #454545;
+  font-size: 16px; /* Decreased font size for smaller screens */
+  font-weight: 600;
+}
+
+.cartitems-format {
+  font-size: 15px; /* Decreased font size for smaller screens */
+}
+
+.carticon-product-icon {
+  width: 80px; /* Adjusted width for a larger image on larger screens */
+  height: 80px; /* Adjusted height for a larger image on larger screens */
+}
+
+.cartitems-quantity {
+  background-color: #8c8c8c;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px; /* Adjusted margin for smaller screens */
+}
+
+@media (min-width: 768px) {
+  .cartitems {
+    margin: 100px 170px;
+  }
+
+  .cartitems hr {
+    height: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .cartitems-format-main {
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    font-size: 18px;
+  }
+
+  .cartitems-format {
+    font-size: 17px;
+  }
+
+  .carticon-product-icon {
+    width: 120px; /* Adjusted width for a larger image on larger screens */
+    height: 120px; /* Adjusted height for a larger image on larger screens */
+  }
+}
