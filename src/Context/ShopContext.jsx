@@ -15,6 +15,7 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   const addToCart = (itemId) => {
+    console.log(itemId);
     setCartItems((prev) => {
       const updatedCart = { ...prev, [itemId]: prev[itemId] + 1 };
       return updatedCart;
